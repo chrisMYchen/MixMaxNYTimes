@@ -1,3 +1,4 @@
+//Christopher Chen 2017
 var key = require('../utils/key');
 var _ = require('underscore');
 var select = require('soupselect').select,
@@ -23,7 +24,6 @@ module.exports = function(req, res) {
           if (err) {
               console.debug("Error: " + err);
           } else {
-
               // soupselect happening here...
               twit_site = select(dom, 'meta[name="twitter:site"]')[0].attribs.value;
               twit_title = select(dom, 'meta[property="twitter:title"]')[0].attribs.content;
@@ -47,6 +47,7 @@ module.exports = function(req, res) {
     });
 };
 
+//Christopher Chen 2017
 function makeTwitCardHTML(url, twit_site, twit_title, twit_description, twit_image, twit_image_alt){
   html = `<div class="TwitterCard" style="display: block;
       position: relative;

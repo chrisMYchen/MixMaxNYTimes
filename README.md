@@ -1,3 +1,4 @@
+Christopher Chen 2017 Feb 27,2017 
 # NYTimes Link Preview for Mixmax
 An upgrade to Mixmax's current link resolver for NYTimes and other websites that offer large Twitter summary cards.
 
